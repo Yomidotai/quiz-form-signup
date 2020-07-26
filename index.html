@@ -1,13 +1,80 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Improve your Japanese reading skills with daily JLPT style quizzes and authentic Japanese via email</title>
-    <style>
-      body {
-        margin: 0;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Daily Japanese quizzes for JLPT reading comprehension and language / vocabulary knowledge."
+    />
+    <title>
+      Improve your Japanese reading skills with daily JLPT style quizzes and
+      authentic Japanese via email
+    </title>
   </head>
   <body>
-    <iframe src="https://cdn.forms-content.sg-form.com/61c18cea-a797-11ea-a68e-fe4faaf61d4d" style="border: 0; width: 100%; height: 100%" />
+    <link
+      rel="stylesheet"
+      href="https://emailoctopus.com/bundles/emailoctopuslist/css/formEmbed.css"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <main class="flex h-screen">
+      <div
+        class="email-octopus-form-wrapper max-w-full overflow-hidden rounded shadow-lg m-auto"
+      >
+        <img
+          src="./quizzes.png"
+          alt="Japanese Quizzes with Yomi.ai"
+          class="w-full"
+        />
+        <div class="px-6 py-4">
+          <h1 class="font-bold text-xl mb-2">Subscribe to Quizzes</h1>
+          <p class="text-gray-700 text-base pb-4">
+            Subscribe to receive daily JLPT-style quizzes with explanations in
+            your inbox.
+          </p>
+          <p class="email-octopus-success-message"></p>
+          <p class="email-octopus-error-message"></p>
+
+          <form
+            method="post"
+            action="https://emailoctopus.com/lists/5d03fae1-cf69-11ea-a3d0-06b4694bee2a/members/embedded/1.3s/add"
+            class="email-octopus-form"
+            data-sitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6"
+          >
+            <div class="email-octopus-form-row">
+              <label for="field_0">Email address</label>
+              <input id="field_0" name="field_0" type="email" placeholder="" />
+            </div>
+
+            <div class="email-octopus-form-row-hp" aria-hidden="true">
+              <!-- Do not remove this field, otherwise you risk bot sign-ups -->
+              <input
+                type="text"
+                name="hp5d03fae1-cf69-11ea-a3d0-06b4694bee2a"
+                tabindex="-1"
+                autocomplete="nope"
+              />
+            </div>
+
+            <div class="email-octopus-form-row-subscribe">
+              <input
+                type="hidden"
+                name="successRedirectUrl"
+                value="https://japanese101.yomi.ai"
+              />
+              <button type="submit">GET QUIZZES</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.5/recaptcha.js"></script>
+    <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.5/formEmbed.js"></script>
   </body>
 </html>
